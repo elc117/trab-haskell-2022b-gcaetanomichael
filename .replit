@@ -1,6 +1,6 @@
 entrypoint = "Main.hs"
 
-hidden = ["ghci_wrapper.sh"]
+hidden = [".ghci", "ghci_wrapper.sh"]
 
 [nix]
 channel = "stable-22_11"
@@ -15,4 +15,4 @@ pattern = "**/*.hs"
 start = ["haskell-language-server", "--lsp"]
 
 [gitHubImport]
-requiredFiles = [".replit", "replit.nix"]
+requiredFiles = [".replit", "replit.nix", ".ghci"]
